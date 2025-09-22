@@ -1,0 +1,48 @@
+.inputZone {
+  display: flex;
+  width: 500px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .inputZone {
+    width: 95%;
+  }
+  
+}
+
+.inputZone input {
+  width: 80%;
+  outline: none;
+  height: 100%;
+  border: none;
+  padding: 0 20px;
+  font-size: 20px;
+}
+
+.inputZone button {
+  width: 20%;
+  border: none;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.inputZone button {
+  width: 20%;
+  border: none;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.inputZone button:hover {
+  background-color: #038a03;
+
+}
+

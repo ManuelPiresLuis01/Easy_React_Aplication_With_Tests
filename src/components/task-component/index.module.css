@@ -1,0 +1,22 @@
+.task {
+  width: 450px;
+  height: 50px;
+  border-radius: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-size: 20px;
+  background-color: #eee2cb;
+}
+
+@media screen and (max-width: 600px) {
+  .task {
+    width: 95%;
+  }
+}
+
+.task i {
+  cursor: pointer;
+}
