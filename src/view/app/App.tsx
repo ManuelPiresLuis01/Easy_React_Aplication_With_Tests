@@ -1,4 +1,4 @@
-import InputZone from "../../components/inputZone-component";
+import InputZone from "../../components/input-component";
 import Title from "../../components/title-component";
 import TasksField from "../../components/tasks-component";
 import Style from "./index.module.css";
