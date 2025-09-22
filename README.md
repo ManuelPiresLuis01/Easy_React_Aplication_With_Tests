@@ -1,69 +1,112 @@
-# React + TypeScript + Vite
+# Easy React Application With Tests
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and beginner-friendly React application designed to demonstrate clean project structure, reusable components, and testing practices. This repository includes examples of unit and integration tests to help developers understand how to build reliable and maintainable React projects.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+- [Installation](#installation)
+- [Available Scripts](#available-scripts)
+- [Testing](#testing)
+- [Folder Structure](#folder-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Portfolio](#portfolio)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Clean and organized React project structure
+- Reusable functional components
+- State management with hooks
+- Examples of unit and integration tests
+- Easy to extend for new features and components
+- CI/CD ready with GitHub Actions
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Installation
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1. Clone the repository:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/your-username/easy-react-application-with-tests.git
+cd easy-react-application-with-tests
+````
+
+2. Install dependencies:
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3. Run the application:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+The app will be available at `http://localhost:5173`.
+
+---
+
+## Available Scripts
+
+* `npm run dev` – Run the development server
+* `npm run build` – Build the production-ready app
+* `npm test` – Run tests (unit + integration)
+* `npm run test:all` – Run all tests including E2E (if configured)
+
+
+````markdown
+## Testing
+
+This project demonstrates:
+
+- **Unit tests** – Testing individual components and functions  
+- **Integration tests** – Testing how components work together  
+
+Tests are written using **Vitest** and **React Testing Library**.  
+End-to-end tests (E2E) can be added using **Playwright**.
+
+### Running Tests
+
+To run all tests (unit, integration, and E2E), use:
+
+```bash
+npm run test:all
+````
+
+To run only unit and integration tests:
+
+```bash
+npm test
+```
+
+
+
+## Folder Structure
+
+```
+/src
+  /components   # Reusable React components
+  /pages        # Page components
+  /tests        # Unit and integration tests
+  /styles       # CSS / SCSS files
+  index.jsx     # Entry point
+```
+
+---
+
+## Contributing
+
+Contributions are welcome! Please open issues or pull requests for suggestions, bug fixes, or improvements.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## Portfolio
+
+Check out my portfolio: [https://portifolio-gx4d.onrender.com/](https://portifolio-gx4d.onrender.com/)
