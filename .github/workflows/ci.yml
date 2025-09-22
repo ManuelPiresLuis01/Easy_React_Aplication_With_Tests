@@ -18,6 +18,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
+
       - run: npm install
+      - run: npx playwright install chromium
       - run: npm run build
       - run: npm run test:all
