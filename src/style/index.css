@@ -9,5 +9,6 @@
 
 #root {
   background-color: #d7ffff;
-  height: 100dvh;
+  min-height: 100dvh;
+  max-height: 100%;
 }

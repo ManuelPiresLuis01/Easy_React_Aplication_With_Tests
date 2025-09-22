@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 
 export default function TasksField() {
   const [tasks, setTasks] = useState(TasksStorage());
-
   useEffect(() => {
     setTasks([...TasksStorage()]);
   },[tasks]);
