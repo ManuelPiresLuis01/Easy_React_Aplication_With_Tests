@@ -12,6 +12,7 @@ test-results
 node_modules
 dist
 dist-ssr
+README.md
 *.local
 
 # Editor directories and files
