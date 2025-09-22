@@ -23,5 +23,11 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src"]
+  "include": [
+    "src",
+    "tests/unitarie/title-component.spec.tsx",
+    "tests/integration/addTask.test.ts",
+    "tests/unitarie/removeSpace.test.ts",
+    "tests/integration/removeTasks.spec.ts"
+  ]
 }
