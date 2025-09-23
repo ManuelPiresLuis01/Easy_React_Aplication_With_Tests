@@ -8,8 +8,8 @@ function App() {
     <>
       <div className={Style.app}>
         <Title />
-        <TasksField/>
         <InputZone />
+        <TasksField />
       </div>
     </>
   );
